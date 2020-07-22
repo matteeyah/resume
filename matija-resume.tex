@@ -15,15 +15,17 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \documentclass[]{matija-resume}
 \usepackage{fancyhdr}
- 
+\usepackage{fontawesome}
+
 \pagestyle{fancy}
 \fancyhf{}
- 
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,37 +51,40 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.33\textwidth}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-GitHub:// \href{https://github.com/matteeyah}{\bf matteeyah} \\
-LinkedIn://  \href{https://www.linkedin.com/in/matteeyah}{\bf matteeyah} \\
-StackOverflow://  \href{https://stackoverflow.com/users/1139722/matteeyah}{\bf matteeyah}
+\section{Links}
+GitHub:// \href{https://github.com/matteeyah}{\bf matteeyah \faExternalLink} \\
+LinkedIn://  \href{https://www.linkedin.com/in/matteeyah}{\bf matteeyah \faExternalLink} \\
+StackOverflow://  \href{https://stackoverflow.com/users/1139722/matteeyah}{\bf matteeyah \faExternalLink}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-\subsection{Tanukidesk}
-\location{\href{https://gitlab.com/gitlab-com/marketing/community-relations/community-advocacy/tanukidesk}{GitLab Project}}
-Bidirectional communication between Zendesk and Disqus / HackerNews.
-\sectionsep
 \subsection{Respondo}
-\location{\href{https://respondohub.com/}{Website}}
+\location{\href{https://respondohub.com/}{Website \faExternalLink}}
 Respondo is a ticketing system for social media posts.
 \sectionsep
+\subsection{Tanukidesk}
+\location{\href{https://gitlab.com/gitlab-com/marketing/community-relations/community-advocacy/tanukidesk}{GitLab Project \faExternalLink}}
+Bidirectional communication between Zendesk and Disqus / HackerNews.
+\sectionsep
+\subsection{This Resume}
+\location{\href{https://github.com/matteeyah/resume}{GitHub Project \faExternalLink}}
+This resume is written in LaTeX and open-source.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
 
 \subsection{Metropolitan University}
 \descript{BS in Software Engineering}
@@ -112,9 +117,9 @@ Machine Learning \\
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.66\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -159,7 +164,7 @@ I started working as a Community Advocate at GitLab with a mission to cultivate 
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards (Computer Science)} 
+\section{Awards (Computer Science)}
 \begin{tabular}{rll}
 2016 & 1\textsuperscript{st} / Country & IT Project of the Year\\
 2016 & Gold Medal / World & International Conference of Young Scientists\\
@@ -174,11 +179,11 @@ I started working as a Community Advocate at GitLab with a mission to cultivate 
 %     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Publications} 
+\section{Publications}
 \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
 \bibliographystyle{abbrv}
 \bibliography{publications}
 \nocite{*}
 
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
