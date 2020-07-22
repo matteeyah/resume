@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{matija-resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Matija}{Ćupić} {
+\urlstyle{same}\href{https://matteeyah.com}{matteeyah.com} |
+\href{mailto:matteeyah@gmail.com}{matteeyah@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+GitHub:// \href{https://github.com/matteeyah}{\bf matteeyah} \\
+LinkedIn://  \href{https://www.linkedin.com/in/matteeyah}{\bf matteeyah} \\
+StackOverflow://  \href{https://stackoverflow.com/users/1139722/matteeyah}{\bf matteeyah}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\subsection{Tanukidesk}
+\location{\href{https://gitlab.com/gitlab-com/marketing/community-relations/community-advocacy/tanukidesk}{GitLab Project}}
+Bidirectional communication between Zendesk and Disqus / HackerNews.
+\sectionsep
+\subsection{Respondo}
+\location{\href{https://respondohub.com/}{Website}}
+Respondo is a ticketing system for social media posts.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Metropolitan University}
+\descript{BS in Software Engineering}
+\location{October 2016 - | Belgrade, Serbia}
+Faculty of Information Technology \\
+\sectionsep
+
+\subsection{Electrotechnical School}
+\location{Grad. June 2016 | Belgrade, Serbia}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Software Engineering \\
+Systems Engineering \\
+Hardware Systems \\
+Distributed Systems \\
+Concurrent Programming \\
+Advanced Math \\
+Machine Learning \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{GitLab}
+\descript{| Backend Engineer }
+\location{October 2018 - Present | Remote}
+\vspace{\topsep}
+After bootstrapping the Community Advocacy team I went back to my biggest passion at work - engineering software. I joined the CI/CD Engineering team after the 2017 GitLab Greece Summit challenge. The challenge was to develop a proof of concept Web IDE. I implemented the backend that spins up kubernetes pods for development and application live preview and exposes their underlying file system as well as a port to access the preview application at. I work as a Backend Engineer on the CI team to make sure our CI offering remains the best on the market.
+\sectionsep
+
+\runsubsection{GitLab}
+\descript{| Community Advocate Manager }
+\location{April 2018 – October 2018 | Remote}
+\vspace{\topsep}
+As luck would have it I got the the opportunity to manage the Community Advocacy team at GitLab in May 2018. I always liked helping others do the best work they can so this was a no-brainer. As a Community Advocate Manager I built and cultivated a new advocacy team.
+\vspace{\topsep}
+\begin{tightemize}
+\item As a follow-up from the \#movingtogitlab initiative, I implemented the GitLab Ultimate for Education and Open Source programs.
+\item Hired and onboarded a new Community Advocacy team.
+\item Overhauled GitLab's Community Advocacy handbook and documented the Community Advocacy process at GitLab
+\item Reworked the Community Advocacy process at GitLab to be more transparent, iterative and collaborative.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{GitLab}
+\descript{| Community Advocate }
+\location{November 2016 – April 2018 | Remote}
+\vspace{\topsep}
+I started working as a Community Advocate at GitLab with a mission to cultivate and reshape GitLab's online community.
+\vspace{\topsep}
+\begin{tightemize}
+\item Implemented custom middleware that integrates Disqus and HackerNews into Zendesk - Tanukidesk.
+\item Successfully migrated the Community Advocacy team from the main support Zendesk instance and to a separate Community Advocacy Zendesk instance and administered it.
+\item  Improved the Community Advocacy workflow and brought all response time averages below 6h (except Hacker News which had a response time of less than 1h).
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards (Computer Science)} 
+\begin{tabular}{rll}
+2016 & 1\textsuperscript{st} / Country & IT Project of the Year\\
+2016 & Gold Medal / World & International Conference of Young Scientists\\
+2016 & 1\textsuperscript{st} / Country & National conference of research projects\\
+2015 & 3\textsuperscript{rd} / Country & National conference of research projects\\
+2014 & 1\textsuperscript{st} / Country & National conference of research projects\\
+2014 & 3\textsuperscript{rd} / Country & National conference of research project
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
